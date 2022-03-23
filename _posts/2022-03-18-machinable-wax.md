@@ -12,8 +12,16 @@ To recycle the old brick, they have to be pelletized and melted, and then casted
 
 At first i tried melding the wax in the microwave. I started with a tiny piece on a low heating setting. After a minute i'd take a look to see if anything had happened, and increased the heat bit by bit. After a ful 5 minutes on the highest setting the plate underneath the wax got really hot, the wax itself only a little... 
 
+![Wax01](/assets/images/2022-03-18-prepping-machinable-wax/wax01.jpg) 
+
+![Wax02](/assets/images/2022-03-18-prepping-machinable-wax/wax02.jpg) 
+
 Next i used a heat-gun. This worked quite well! The wax melted pretty quickly. To speed up this process i first chopped the blocks into smaller pieces by knife. Trying to just cut of pieces didn't work. Hitting it with brute force did. 
 
+![Wax04](/assets/images/2022-03-18-prepping-machinable-wax/wax04.jpg) 
+
 I put the pieces in a pan, on a electric stove on level 3,5-4 (out of 5). Then i used the heat-gun to melt the top part. To avoid burning the bottom part i stirred frequently. 
+
+![Wax05](/assets/images/2022-03-18-prepping-machinable-wax/wax05.jpg) 
 
 To optimise my technique i threw in a shallow layer of the larger pieces first. Once partly melted i stirred the wax, and put a thin layer of slightly smaller pieces on top. I repeated this process until the pan was full. Some of the pieces clumped together in the pan, i hold them up with my stirring spoon and used the heat-gun to melt. With this technique i needed around 20 minutes to melt enough wax for one brick. 

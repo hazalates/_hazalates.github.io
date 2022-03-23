@@ -40,7 +40,7 @@ Still wanting to give Imagemagick another shot i decided to not use the GUI, but
 
 I compared the file sized of the files converted by Mac and Imagemagick. 
 
-![Screenshot-04](../assets/images/2022-03-21-imagemagick/Screenshot-04.png)
+![Screenshot-04](/assets/images/2022-03-21-imagemagick/Screenshot-04.png)
                                 
 
 TO DO: Trying different file size compressions with Imagemagick, since the file sized are still very big. I do want to use Imagemagick since i have more control over the outcome. 
