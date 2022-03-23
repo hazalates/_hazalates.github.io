@@ -7,7 +7,7 @@ keywords: "Internship, diary, activities"
 ---
 #### Week 4  
 
-**Mon 14/03** Bottled Jun, made new Jun and milkkefir. Prepped remaining wax bricks. Tried Imagemagick. Worked on documentation. 
+**Mon 14/03** Bottled Jun, made new Jun and milk kefir. Prepped remaining wax bricks. Tried Imagemagick. Worked on documentation. 
 
 **Tue 15/03** Joined Bio-hack academy about living organisms
 
@@ -52,4 +52,4 @@ keywords: "Internship, diary, activities"
 
 **Thu 03/03** Fabacademy class about electrical components & Kicad. Played a bit with Kicad.
 
-**Fri 04/03** Made my first lasercut, struggled finishing Ruby & Jekyll install.
+**Fri 04/03** Made my first laser-cut, struggled finishing Ruby & Jekyll install.

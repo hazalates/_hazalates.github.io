@@ -3,7 +3,7 @@ layout: post
 title: "Getting started with Ruby & Jekyll on MacOS"
 comments: true
 description: "Ruby & Jekyll on MacOS"
-keywords: "Ruby, Jekyll, SSG, MacOS, Apple Sillicon, GIT, GitHub"
+keywords: "Ruby, Jekyll, SSG, MacOS, Apple Silicon, GIT, GitHub"
 ---
 
 Setting up Github
@@ -17,7 +17,7 @@ Make an account on Github
 
 Check if MacOS is updated - update if needed
 
-Creating ~/.zshrc in homefolder 
+Creating ~/.zshrc in home folder 
 
     touch .zshrc
 
@@ -110,7 +110,7 @@ Add Gem direction to $PATH
 
 **What is it:**
 
-Webrick is missing. Webrick is not included anymore in Ruby 3.0 - thus we need to add in mannualy 
+Webrick is missing. Webrick is not included anymore in Ruby 3.0 - thus we need to add in manually 
 
 1. Test site - site is running
 
@@ -131,15 +131,15 @@ Add .DS_Store to .gitignore file
 
 **What is it:**
 
-.DS_Store is a file automaticaly created my Mac when opening a file in Finder. It stores information about thumbnails.
+.DS_Store is a file automatically created my Mac when opening a file in Finder. It stores information about thumbnails.
 
 1. Add repository op github.com as a remote 
 
 1. Push site to github
 
-**Now we have a super simple site! - Next: Personalise site with theme!**
+**Now we have a super simple site! - Next: Personalize site with theme!**
 
-> **Frequently used command cheatsheet:**
+> **Frequently used command cheat-sheet:**
 >
 > cd _change directory_
 >

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Making biomaterials"
+title: "Making bio-materials"
 comments: true
 description: "Description"
-keywords: "mycelium, scoby, biomaterials, bio-hack"
+keywords: "mycelium, scoby, bio-materials, bio-hack"
 ---
 
-The bio-hack academy is focussing on biomaterials and living organisms this week. Since i have a big obsession with food and fermentation this sounded like a really interesting class to join. 
+The bio-hack academy is focussing on bio-materials and living organisms this week. Since i have a big obsession with food and fermentation this sounded like a really interesting class to join. 
 
 #### Mycelium material-bank
 
@@ -22,17 +22,17 @@ First we needed food for the mycelium. This consists of the following ingredient
 
 - Water
 
-This mixture is placed in a glass bottle in a pressurecooker to sterilize. 
+This mixture is placed in a glass bottle in a pressure-cooker to sterilize. 
 
-Next we poured the mixture in a petridish. It is very important to work VERY sterile. We desinfected the table and our gloves and used a gass burner to keep the air around clean. 
+Next we poured the mixture in a petri-dish. It is very important to work VERY sterile. We disinfected the table and our gloves and used a gas burner to keep the air around clean. 
 
 ![Bio01](/assets/images/2022-03-22-biomaterials/bio01.jpg) 
 
 ![Bio02](/assets/images/2022-03-22-biomaterials/bio02.jpg) 
 
-We waited to the mixture to solidify, forming a gell-like substance. 
+We waited to the mixture to solidify, forming a gel-like substance. 
 
-When the mixure was solid, we scraped a bit of mycelium of a mother-bank and impregnated our petri. 
+When the mixture was solid, we scraped a bit of mycelium of a mother-bank and impregnated our petri. 
 
 ![Bio03](/assets/images/2022-03-22-biomaterials/bio03.jpg) 
 
@@ -54,6 +54,6 @@ Some projects i'd like to do with SCOBY:
 
 - A phone cover.
 
-- Using SCOBY as a conductor to incorporate into my electronic designs (RESEARCH -> conducting proporties of cellulose). 
+- Using SCOBY as a conductor to incorporate into my electronic designs (RESEARCH -> conducting properties of cellulose). 
 
 ![Bio05](/assets/images/2022-03-22-biomaterials/bio05.jpg) 

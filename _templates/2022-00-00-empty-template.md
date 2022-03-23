@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Kefir"
+title: "Title"
 comments: true
-description: "Kefir"
-keywords: "Milk kefir, water kefir, fermentation"
+description: "Description"
+keywords: "Keywords"
 ---
