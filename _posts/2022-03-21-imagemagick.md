@@ -8,7 +8,7 @@ keywords: "converting, images, imagemagick, heic, jpg"
 
 To post images in my blog-posts for my documentation website i have to convert the images to an usable image extension. When importing photo's i took with my phone (Iphone 11), the original extension is *.HEIC. An usable extension would be jpeg. Ideally, i want the images to have a small file size. 
 
-![Screenshot-01](/assets/images/2022-03-21-imagemagick/screenshot-01.png)
+![Screenshot-01](/assets/images/2022-03-21-imagemagick/Screenshot-01.png)
 
 I could convert the images using Adobe Lightroom, but this would be a rather dramatic program/workflow for such a simple task. I can do better than this. I watched the lecture about Computer-aided Design, and came across Imagemagick. Imagemagick is a lightweight command line-based software for processing images. 
 
@@ -30,9 +30,9 @@ I googled the issue and a lot of steps need to be taken to resolve this issue. B
 
 Apparently since macOS Monterey‌ my mac has a build-in function for converting images.
 
-![Screenshot-02](/assets/images/2022-03-21-imagemagick/screenshot-02.png)
+![Screenshot-02](/assets/images/2022-03-21-imagemagick/Screenshot-02.png)
 
-![Screenshot-03](/assets/images/2022-03-21-imagemagick/screenshot-03.png)
+![Screenshot-03](/assets/images/2022-03-21-imagemagick/Screenshot-03.png)
 
 Still wanting to give Imagemagick another shot i decided to not use the GUI, but use a command instead.  
 
@@ -40,6 +40,7 @@ Still wanting to give Imagemagick another shot i decided to not use the GUI, but
 
 I compared the file sized of the files converted by Mac and Imagemagick. 
 
-![Screenshot-04](/assets/images/2022-03-21-imagemagick/screenshot-04.png)
+![Screenshot-04](../assets/images/2022-03-21-imagemagick/Screenshot-04.png)
+                                
 
 TO DO: Trying different file size compressions with Imagemagick, since the file sized are still very big. I do want to use Imagemagick since i have more control over the outcome. 
