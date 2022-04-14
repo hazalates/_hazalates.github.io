@@ -1,0 +1,17 @@
+---
+layout: post
+title: Slime-Mold robot
+comments: true
+description: "Slime-Mold "
+keywords: "Slime-Mold robot"
+---
+
+Slime-molds are weird little creatures. There not part of the Fungus family, but they're also no animal. They do have a really primitive form of intelligence and memory, and can be trained to solve mazes. Slime-molds don't like lights. 
+
+During a research scientist made a robot and used the slime-molds to control the robot by measuring the position of the slime-mold and using this data to move the legs of the robot. I want to replicate something similar and see how i can use the slime-mold to control a self-made robot. 
+
+Therefor i want to study the behavior of the mold. How does it react to Infra-red, high of low frequencies and other inputs, and which sensors can i use (IR, ultrasonic, webcam, kinect) to collect data from the slime-molds and transfer this to an output (wheels, motors, drawing)?
+
+** IDEA **
+
+Maybe we can make an instrument which the mold can control so it can make music!

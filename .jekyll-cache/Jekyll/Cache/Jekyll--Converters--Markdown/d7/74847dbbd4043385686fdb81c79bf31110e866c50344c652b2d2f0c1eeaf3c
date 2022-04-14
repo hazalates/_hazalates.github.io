@@ -1,0 +1,18 @@
+I",<p>I want to improve my site by adding two separate pages. One of the pages looks similar to my index page, but contains posts of projects i want to do in the future and other inspiration. The second page orders all my posts based on categories.</p>
+
+<p>I studied my current repository and looked at how my index page behaved. I added a folder called “_future_projects” and made a test-post.</p>
+
+<p><img src="/assets/images/2022-03-29-collections-jekyll/screenshot01.jpg" alt="Screenshot01" /></p>
+
+<p>Then i made a future.html file in my root and copied the content of index.html. I replaced the “post” with “future_projects”</p>
+
+<p><img src="/assets/images/2022-03-29-collections-jekyll/screenshot02.jpg" alt="Screenshot02" /></p>
+
+<p>This didn’t do much. Since this sentence is not HTML, but probably Markdown or Jekyll code, i googled “how to create similar folder as _posts in Jekyll site. <a href="https://stackoverflow.com/questions/45260783/jekyll-create-another-folder-with-similar-functionality-of-posts">This stackoverflow</a> page referred me to <a href="https://jekyllrb.com/docs/collections/">the Jekyll documentation page about Collections</a>.</p>
+
+<p>I had to declare a collection in my _config.yml file called “future_projects”. I wanted a listed view of the future projects pages, so i also had to put output: true</p>
+
+<p><img src="/assets/images/2022-03-29-collections-jekyll/screenshot03.jpg" alt="Screenshot03" /></p>
+
+<p>Now i could see a similar list as seen on my index page, but with pages saved in my _future_projects folder!</p>
+:ET

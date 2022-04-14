@@ -1,0 +1,54 @@
+I"�<p>Slime molds are single cell organisms which you can see with the naked eye. Although not having a brain, they have what is known as the most primitive form of intelligence and memory, being able to solve mazes and control robots.</p>
+
+<p>I want to make a robot controlled by the slime mold, but in order to do so i’ll first study their behavior.</p>
+
+<h4 id="experiment-1-ir-light">Experiment 1: (IR-)light</h4>
+
+<p>Knowing they don’t like visible light, how do slime molds react to infrared?</p>
+
+<p>To test this i made a simple circuit, connecting a IR-LED to a 9v battery.</p>
+
+<p>First i calculated the resistance needed to connect an IR-LED to a 9v battery.</p>
+
+<p><img src="/assets/images/2022-04-04-slime-molds/mold04.jpg" alt="mold04" /></p>
+
+<p>Then i soldered the circuit.</p>
+
+<p>To see if the mold preferred darkness over IR, we taped part of the petri-dish containing the molds. We used two petri-dishes with molds to lower the chance of a random/false result.</p>
+
+<p>Together with the IR we put the molds in a box to check on them in a couple of days.</p>
+
+<p><img src="/assets/images/2022-04-04-slime-molds/mold01.jpg" alt="mold01" /></p>
+
+<h6 id="results">Results</h6>
+
+<p>The result wasn’t the result i expected! I expected the molds disliking the IR light, or not responding to it at all.</p>
+
+<p>Instead one of the slime molds completely moved to the side with IR. The other mold didn’t respond to it at all.</p>
+
+<p><img src="/assets/images/2022-04-04-slime-molds/mold03.jpg" alt="mold03" /></p>
+
+<p>(left: mold didn’t respond, right: mold moved to IR side completely)</p>
+
+<p>This could have multiple reasons. The left petri-dish only has a single layer of tape, maybe the IR light past trough the tape. Also, the white tape + the plastic of the petri-dish could reflect the IR, so the tape didn’t prevent the IR coming in.</p>
+
+<p>To do: Same experiment, but with black tape to avoid reflection. Maybe a smaller area with IR to see if they are really attracted to IR.</p>
+
+<h4 id="experiment-2-ir-light-20">Experiment 2: (IR-)light 2.0</h4>
+
+<p>I recreated the previous experiment to rule out any random results. I replaced the 9v battery and prepared 3 petri-dishes with slime-molds, agar and oats.</p>
+
+<p>I taped of different sections. I also ensured that the inside of the tape was black to avoid light bouncing/reflecting.</p>
+
+<p><img src="/assets/images/2022-04-04-slime-molds/mold08.jpg" alt="mold03" /></p>
+
+<h6 id="results-1">Results</h6>
+
+<p>The section with the black X is the taped section.</p>
+
+<p><img src="/assets/images/2022-04-04-slime-molds/mold09.jpg" alt="mold03" />
+<img src="/assets/images/2022-04-04-slime-molds/mold10.jpg" alt="mold03" />
+<img src="/assets/images/2022-04-04-slime-molds/mold11.jpg" alt="mold03" /></p>
+
+<p>The molds don’t seem to react on IR light. In al the 3 petri-dishes the molds moved to both the taped and untaped section. I think it’s save to say slime-molds don’t mind IR-light.</p>
+:ET

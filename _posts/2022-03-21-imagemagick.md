@@ -44,3 +44,9 @@ I compared the file sized of the files converted by Mac and Imagemagick.
                                 
 
 TO DO: Trying different file size compressions with Imagemagick, since the file sized are still very big. I do want to use Imagemagick since i have more control over the outcome. 
+
+
+Ps. 
+    n=1; for file in *; do mv "$file" "Picture $n"; let n++; done
+
+Using this command i can change the filenames of the images all at once. 

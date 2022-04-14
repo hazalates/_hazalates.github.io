@@ -5,17 +5,49 @@ comments: true
 description: "Keeping track of my daily activities"
 keywords: "Internship, diary, activities"
 ---
+#### Week 7
+
+**Mon 11/04** Lecture about CRISPR. Introduction to protocol
+
+**Tue 12/04** Lab-day, performing CRISPR.
+
+**Thu 14/04**  
+
+**Fri 15/04**  
+
+#### Week 6
+
+**Mon 04/04** 
+
+**Wen 06/04** Making a 3D model using slicer for Fusion360 and the lasercutter. Class about machine design.
+
+**Thu 07/04**  Looooots of documentation. Botteling kombucha and JUN
+
+**Fri 08/04**  3D scanning and printing. 
+
+#### Week 5  
+
+**Mon 28/03** Fixed scale. Watched Fusion tutorials. Took care of ferments. Destroyed (and fixed!) site 
+
+**Tue 29/03** Added collections to site. Documentation. Made new batch of jun. Took care of kefir. 
+
+**Thu 31/03**  Class about output devices. Played around with stepper motors and how to calc/measure drawn current. Set up experiment for slime-molds. Took care of kefir
+
+**Fri 01/04**  Gave a kombucha workshop. Dyeing with bacteria in the bio-lab.
+
+<div class="divider"></div>
+
 #### Week 4  
 
-**Mon 14/03** Bottled Jun, made new Jun and milk kefir. Prepped remaining wax bricks. Tried Imagemagick. Worked on documentation. 
+**Mon 21/03** Bottled Jun, made new Jun and milk kefir. Prepped remaining wax bricks. Tried Imagemagick. Worked on documentation. 
 
-**Tue 15/03** Joined Bio-hack academy about living organisms
+**Tue 22/03** Joined Bio-hack academy about living organisms
 
 **Wed 23/03** Took care of ferments. Documenting. Fabacademy presentations and class. 
 
-**Thu 17/03** 
+**Thu 24/03** Meet-up with class from HKU, visited Eye museum. Watched demonstration about casting and moulding. Tested some different casting materials
 
-**Fri 18/03**  
+**Fri 25/03**  Set up SCOBY for growing bio-material.
 
 <div class="divider"></div>
 

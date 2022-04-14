@@ -1,0 +1,258 @@
+I"�<p>Even though the milk kefir grains feeds on lactose resulting in a low-to-none lactose containing end product, milk kefir is not suitable for vegans. Thats why i want to train the milk kefir grains to ferment plant-based milk. Using plant-based milk is already possible, but because the plant-based milk doesn’t contain any lactose the kefir grains will starve and eventually die.</p>
+
+<p>I want to research if it’s possible to slowly train the grains to eat other sources of sugar (forcing fast evolution). I’ll slowly introduce soy milk (because of its high protein).</p>
+
+<p>Soy milk does contain sucrose and stachyose[^1] as the main sugar component. Because lactose breaks down into glucose and galactose (a sugar close to glucose) i’ll add glucose to the soy-milk. I make the soy-milk myself, using 1L of water with 100g (dried) soybeans.</p>
+
+<p>To see how the kefir grains improve when slowly transitioning i will have 2 control groups; 100% soy-milk, and 100% milk.</p>
+
+<p>Each day i’ll make a new batch, and examine the kefir grains based on their looks and reproduction/weight.</p>
+
+<p>The schedule for training the grains is as follows:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Day</th>
+      <th>% Soy</th>
+      <th>% Milk</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Day 1</td>
+      <td>10 %</td>
+      <td>90%</td>
+    </tr>
+    <tr>
+      <td>Day 2</td>
+      <td>20 %</td>
+      <td>80%</td>
+    </tr>
+    <tr>
+      <td>Day 3</td>
+      <td>30 %</td>
+      <td>70%</td>
+    </tr>
+    <tr>
+      <td>Day 4</td>
+      <td>40 %</td>
+      <td>60%</td>
+    </tr>
+    <tr>
+      <td>Day 5</td>
+      <td>50 %</td>
+      <td>50%</td>
+    </tr>
+    <tr>
+      <td>Day 6</td>
+      <td>60 %</td>
+      <td>40%</td>
+    </tr>
+    <tr>
+      <td>Day 7</td>
+      <td>70 %</td>
+      <td>30%</td>
+    </tr>
+    <tr>
+      <td>Day 8</td>
+      <td>80 %</td>
+      <td>20%</td>
+    </tr>
+    <tr>
+      <td>Day 9</td>
+      <td>90 %</td>
+      <td>10%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/assets/images/2022-03-25-plantbased-milk-kefir/milkkefir01.jpg" alt="Milkkefir01" /></p>
+
+<p>The results of the examination:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Weight</th>
+      <th>Milk</th>
+      <th>Soy &amp; Milk</th>
+      <th>Soy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Start (25-03)</td>
+      <td>20g</td>
+      <td>20g</td>
+      <td>20g</td>
+    </tr>
+    <tr>
+      <td>Batch 1 (26-03)</td>
+      <td>22g</td>
+      <td>26g</td>
+      <td>27g</td>
+    </tr>
+    <tr>
+      <td>Batch 2 (27-03)</td>
+      <td>25g</td>
+      <td>25g</td>
+      <td>22g</td>
+    </tr>
+    <tr>
+      <td>Batch 3 (28-03)</td>
+      <td>27g</td>
+      <td>33g</td>
+      <td>23g</td>
+    </tr>
+    <tr>
+      <td>Batch 4 (29-03)</td>
+      <td>32g</td>
+      <td>35g</td>
+      <td>22g</td>
+    </tr>
+    <tr>
+      <td>Batch 5* (30-03)</td>
+      <td>37g</td>
+      <td>41g</td>
+      <td>25g</td>
+    </tr>
+    <tr>
+      <td>Batch 6** (31-03)</td>
+      <td>47g</td>
+      <td>57g</td>
+      <td>22g</td>
+    </tr>
+    <tr>
+      <td>Batch 7 (01-04)</td>
+      <td>43g</td>
+      <td>58g</td>
+      <td>22g</td>
+    </tr>
+    <tr>
+      <td>Batch 8*** (04-04)</td>
+      <td>69g</td>
+      <td>92g</td>
+      <td>26g</td>
+    </tr>
+    <tr>
+      <td>Batch 9<em>**</em> (06-04)</td>
+      <td>35g</td>
+      <td>42g</td>
+      <td>17g</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Looks</th>
+      <th>Milk</th>
+      <th>Soy &amp; Milk</th>
+      <th>Soy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Batch 1</td>
+      <td>Buttermilk-like structure</td>
+      <td>Milk separated, yoghurt-like texture, slightly fizzy</td>
+      <td>Milk separated a lot, fizzy taste</td>
+    </tr>
+    <tr>
+      <td>Batch 2</td>
+      <td>Buttermilk-like structure</td>
+      <td>Milk separated, yoghurt-like texture, slightly fizzy</td>
+      <td>Milk almost completely separated, strong fizzy taste</td>
+    </tr>
+    <tr>
+      <td>Batch 3</td>
+      <td>Buttermilk-like structure</td>
+      <td>Strongly fermented and fizzy, jar almost exploding</td>
+      <td>Very liquid, slightly fermented smell and taste</td>
+    </tr>
+    <tr>
+      <td>Batch 4</td>
+      <td>Fizzy/fermented. Thick buttermilk</td>
+      <td>Very fizzy, nice slightly fermented smell, thick buttermilk texture</td>
+      <td>Very liquid, minimal fermented taste and smell</td>
+    </tr>
+    <tr>
+      <td>Batch 5*</td>
+      <td>Partly separated, less fizzy, curdled texture</td>
+      <td>Heavily curdled texture, fizzy, pleasant sour</td>
+      <td>yoghurt-like, slightly thicker, strong soy flavour, mild fermented smell</td>
+    </tr>
+    <tr>
+      <td>Batch 6**</td>
+      <td>Fizzy, curdled. Fermented taste</td>
+      <td>Thick structure, but more liquid than previous batch</td>
+      <td>More fizzy than expected, slightly thicker texture, pleasant taste but still too soy-like</td>
+    </tr>
+    <tr>
+      <td>Batch 7</td>
+      <td>same steady result</td>
+      <td>similar to batch</td>
+      <td>slightly thickened. Too soy-like taste (not pleasant)</td>
+    </tr>
+    <tr>
+      <td>Batch 8</td>
+      <td>very curdled</td>
+      <td>very fermented</td>
+      <td>minimal fermented, very stinky</td>
+    </tr>
+    <tr>
+      <td>Batch 9</td>
+      <td>same results as previous batch</td>
+      <td>same results as previous batch</td>
+      <td>same results as previous batch</td>
+    </tr>
+    <tr>
+      <td>Batch 10</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Looks of the first batch (after 24h of fermenting):</p>
+
+<p>*Used other kind of soy milk (AH huismerk sojadrink)
+** Shorter fermentation time (18h)
+<strong>* Didn’t take care of the kefir in the weekend, fermentation time for batch 8 is 62h 
+**</strong> To get a good result of how much the grains have grown i rinsed them with water to remove all the milk. The weight is lower compared to te results where i didn’t wash the grains</p>
+
+<p><img src="/assets/images/2022-03-25-plantbased-milk-kefir/milkkefir02.jpg" alt="Milkkefir02" /></p>
+
+<p>Looks of the second batch:</p>
+
+<p><img src="/assets/images/2022-03-25-plantbased-milk-kefir/milkkefir03.jpg" alt="Milkkefir03" /></p>
+
+<p>Looks of the grains at starting point:</p>
+
+<p><img src="/assets/images/2022-03-25-plantbased-milk-kefir/milkkefir04.jpg" alt="Milkkefir04" /></p>
+
+<p>Grains after batch 2:</p>
+
+<p>Milk:</p>
+
+<p><img src="/assets/images/2022-03-25-plantbased-milk-kefir/milkkefir05.jpg" alt="Milkkefir05" /></p>
+
+<p>Soy/Milk:</p>
+
+<p><img src="/assets/images/2022-03-25-plantbased-milk-kefir/milkkefir06.jpg" alt="Milkkefir06" /></p>
+
+<p>Soy:</p>
+
+<p><img src="/assets/images/2022-03-25-plantbased-milk-kefir/milkkefir07.jpg" alt="Milkkefir07" /></p>
+
+<p>31-03: I noticed the grains in 100% soy don’t reproduce and their effectiveness starts to decline. The grains in 100% milk have a steady consistency, but the mix-grains ferment crazy fast. Yeast and bacteria work more effective when submitted to manageable amounts of stress, but i also hope they react well to the glucose added. The soy-kefir has a very strong soy taste which is displeasing. Hopefully i can successfully make oatmilk-kefir in the future, which probably doesn’t have a strong by-taste.</p>
+
+<p>I switched to store bought soy milk since it wasn’t doable to make soy-milk each morning, and the grains seem to react better on the store bought milk, probably due the higher sugar content.</p>
+
+<p>07-04: The soy/milk grains are now completely converted to soymilk. Of all the batches, they’ve reproduces the most, going from 20g to 42g (where the milkgrains reached 35g and te soygrains shrunk to 17g). I hope the grains stay vital and don’t need lactose anymore. Further tests will get their own page ;)</p>
+
+<p>[^1] <img src="https://acsess.onlinelibrary.wiley.com/doi/abs/10.2135/cropsci2008.05.0256#:~:text=Sucrose%20and%20stachyose%20are%20the,10%20mg%20g%E2%88%921%20stachyose." alt="Genetic Variability of Seed Sugar Content in Worldwide Soybean Germplasm Collections" /></p>
+:ET

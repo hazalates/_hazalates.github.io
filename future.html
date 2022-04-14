@@ -1,0 +1,31 @@
+---
+layout: default
+title: Future
+---
+<section class="intro">
+  <div class="container">
+    <a href="{{ '/index' | prepend: site.baseurl | prepend: site.url }}">Documentation</a>
+    <a href="{{ '/future' | prepend: site.baseurl | prepend: site.url }}">Tags</a>
+  </div>
+</section>
+
+<section class="post-list">
+  <div class="container">
+    {% for future_project in site.future_projects %}
+      {% unless future_project.next %}
+        <h2 class="category-title">{{ future_project.date | date: '%Y' }}</h2>
+      {% else %}
+        {% capture year %}{{ future_project.date | date: '%Y' }}{% endcapture %}
+        {% capture nyear %}{{ future_project.next.date | date: '%Y' }}{% endcapture %}
+        {% if year != nyear %}
+          <h2 class="category-title">{{ future_project.date | date: '%Y' }}</h2>
+        {% endif %}
+      {% endunless %}
+      <article class="future_project-item">
+        <span class="future_project-meta date-label">{{ future_project.date | date: "%b %d" }}</span>
+        <div class="article-title"><a class="future_project-link" href="{{ future_project.url | prepend: site.baseurl | prepend: site.url }}">{{ future_project.title }}</a></div>
+      </article>
+    {% endfor %}
+  </div>
+
+</section>
