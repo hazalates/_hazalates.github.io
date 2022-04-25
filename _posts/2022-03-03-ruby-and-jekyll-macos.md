@@ -159,6 +159,6 @@ Add .DS_Store to .gitignore file
 >
 > git remote ad https://github.com/hazalates/hazalates.github.io.git
 >
-> git push -u origin master _push changes_
+> git push -u origin main _push changes_
 >
 > bundle update _update all gems_ 

@@ -26,21 +26,21 @@ This mixture is placed in a glass bottle in a pressure-cooker to sterilize.
 
 Next we poured the mixture in a petri-dish. It is very important to work VERY sterile. We disinfected the table and our gloves and used a gas burner to keep the air around clean. 
 
-![Bio01](/assets/images/2022-03-22-biomaterials/bio01.jpg) 
+![Bio](/assets/images/2022-03-22-biomaterials/bio10.jpg) 
 
-![Bio02](/assets/images/2022-03-22-biomaterials/bio02.jpg) 
+![Bio](/assets/images/2022-03-22-biomaterials/bio11.jpg) 
 
 We waited to the mixture to solidify, forming a gel-like substance. 
 
 When the mixture was solid, we scraped a bit of mycelium of a mother-bank and impregnated our petri. 
 
-![Bio03](/assets/images/2022-03-22-biomaterials/bio03.jpg) 
+![Bio](/assets/images/2022-03-22-biomaterials/bio12.jpg) 
 
 We sealed the petri and placed it in an incubator. After two weeks we should have enough mycelium to work with. 
 
 Instead of using the normal mycelium mother i used tempeh starter (Rhizopus Oligosporis and Rhizopus Oryzae).
 
-![Bio04](/assets/images/2022-03-22-biomaterials/bio04.jpg) 
+![Bio](/assets/images/2022-03-22-biomaterials/bio13.jpg) 
 
 #### Using SCOBY culture as biomaterial
 
@@ -56,4 +56,32 @@ Some projects i'd like to do with SCOBY:
 
 - Using SCOBY as a conductor to incorporate into my electronic designs (RESEARCH -> conducting properties of cellulose). 
 
-![Bio05](/assets/images/2022-03-22-biomaterials/bio05.jpg) 
+![Bio](/assets/images/2022-03-22-biomaterials/bio14.jpg) 
+
+##### Setting up a SCOBY for SCOBY-leather
+
+![Bio](/assets/images/2022-03-22-biomaterials/bio1.jpg) 
+
+![Bio](/assets/images/2022-03-22-biomaterials/bio2.jpg) 
+
+After 20 days 
+
+![Bio](/assets/images/2022-03-22-biomaterials/bio3.jpg) 
+
+![Bio](/assets/images/2022-03-22-biomaterials/bio4.jpg) 
+
+Then i washed the SCOBY with water and soap to make it less sticky.
+
+![Bio](/assets/images/2022-03-22-biomaterials/bio5.jpg) 
+
+I set-up a few different experiments to try with the leather.
+
+I rubbed one piece with tung-oil, i put two pieces on different textures, i left one raw and i put two pieces on top of each other to glue them together.
+
+![Bio](/assets/images/2022-03-22-biomaterials/bio7.jpg) 
+
+![Bio](/assets/images/2022-03-22-biomaterials/bio8.jpg) 
+
+I places all the SCOBY's in the dehydrator on 70* for 12h. 
+
+![Bio](/assets/images/2022-03-22-biomaterials/bio9.jpg) 

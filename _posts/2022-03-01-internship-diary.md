@@ -5,25 +5,53 @@ comments: true
 description: "Keeping track of my daily activities"
 keywords: "Internship, diary, activities"
 ---
+#### Week 9
+
+**Mon 25/04** 
+
+**Tue 26/04** 
+
+**Thu 28/04** 
+
+**Fri 29/04** 
+
+<div class="divider"></div>
+
+#### Week 8
+
+**Mon 18/04** Free because of Easter
+
+**Tue 19/04** 
+
+**Thu 21/04** 
+
+**Fri 22/04** 
+
+<div class="divider"></div>
+
 #### Week 7
 
-**Mon 11/04** Lecture about CRISPR. Introduction to protocol
+**Mon 11/04** Lecture about CRISPR. Introduction to protocol.
 
 **Tue 12/04** Lab-day, performing CRISPR.
 
-**Thu 14/04**  
+**Thu 14/04** Documentation. Helped Bio-hack academy students with 3D printing.
 
-**Fri 15/04**  
+**Fri 15/04** Half day because of Good Friday. Fusion360 tutorials.
+
+<div class="divider"></div>
 
 #### Week 6
 
-**Mon 04/04** 
+**Mon 04/04** Don't remember (whoops)
 
-**Wen 06/04** Making a 3D model using slicer for Fusion360 and the lasercutter. Class about machine design.
+**Wen 06/04** Making a 3D model using slicer for Fusion360 and the laser-cutter. Class about machine design.
 
-**Thu 07/04**  Looooots of documentation. Botteling kombucha and JUN
+**Thu 07/04**  Looooots of documentation. Bottling kombucha and JUN
 
 **Fri 08/04**  3D scanning and printing. 
+
+<div class="divider"></div>
 
 #### Week 5  
 
@@ -41,7 +69,7 @@ keywords: "Internship, diary, activities"
 
 **Mon 21/03** Bottled Jun, made new Jun and milk kefir. Prepped remaining wax bricks. Tried Imagemagick. Worked on documentation. 
 
-**Tue 22/03** Joined Bio-hack academy about living organisms
+**Tue 22/03** Joined Bio-hack academy about living organisms.
 
 **Wed 23/03** Took care of ferments. Documenting. Fabacademy presentations and class. 
 
