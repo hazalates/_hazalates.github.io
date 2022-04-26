@@ -1,0 +1,21 @@
+I"Š<h5 id="setting-up-kinect">Setting up Kinect</h5>
+
+<h6 id="recommendations-on-working-with-kinect">Recommendations on working with kinect</h6>
+
+<p><a href="https://www.amazon.com/Making-Things-See-Processing-MakerBot/dp/1449307078/ref=as_li_ss_tl?ie=UTF8&amp;linkCode=sl1&amp;tag=learniproces-20&amp;linkId=742b2c243f8e415b108d559a422faf5c">Making things see - book on computer vision</a></p>
+
+<h6 id="openni-or-openkinect">OpenNI or OpenKinect?</h6>
+
+<p><a href="https://newscrewdriver.com/2019/01/23/xbox-360-kinect-driver-openni-or-openkinect-freenect/">Which one?</a></p>
+
+<h6 id="openkinect">OpenKinect</h6>
+
+<p><a href="https://openkinect.org/wiki/Getting_Started#OS_X">OpenKinect</a></p>
+
+<p><a href="https://shiffman.net/p5/kinect/">Processing lib openkinect</a></p>
+
+<ol>
+  <li>I installed the Processing lib recommended in <a href="https://shiffman.net/p5/kinect/">this</a> tutorial.</li>
+</ol>
+
+:ET

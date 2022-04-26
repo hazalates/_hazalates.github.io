@@ -85,3 +85,22 @@ I rubbed one piece with tung-oil, i put two pieces on different textures, i left
 I places all the SCOBY's in the dehydrator on 70* for 12h. 
 
 ![Bio](/assets/images/2022-03-22-biomaterials/bio9.jpg) 
+
+##### Results
+
+There was a big difference between the SCOBY with oil and without. 
+
+![Bio](/assets/images/2022-03-22-biomaterials/bio19.jpg) 
+
+![Bio](/assets/images/2022-03-22-biomaterials/bio15.jpg) 
+
+The SCOBY with oil was more flexible and less brittle compared to the SCOBY without oil.
+
+There was a high level of detail visible in SCOBY's placed on a texture.
+
+![Bio](/assets/images/2022-03-22-biomaterials/bio21.jpg) 
+
+![Bio](/assets/images/2022-03-22-biomaterials/bio23.jpg) 
+
+The pieces stacked on top of each other glued together as if it was one piece.
+
