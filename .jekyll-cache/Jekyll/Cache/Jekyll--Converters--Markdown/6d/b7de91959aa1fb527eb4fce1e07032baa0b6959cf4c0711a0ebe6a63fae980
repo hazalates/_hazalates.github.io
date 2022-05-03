@@ -1,4 +1,4 @@
-I"�<h5 id="how-to-use-the-vinyl-cutter">How to use the vinyl cutter</h5>
+I"'<h5 id="how-to-use-the-vinyl-cutter">How to use the vinyl cutter</h5>
 
 <p>Ferah is showing me how to use the vinyl cutter.</p>
 
@@ -186,4 +186,100 @@
 
 <p><img src="/assets/images/2022-04-21-vinyl-cutter/vinyl8.jpg" alt="vinyl" /></p>
 
+<h4 id="thermo-pressing">Thermo pressing</h4>
+
+<p>Next want to cut a design with the vinyl cutter and print it on a t-shirt.</p>
+
+<p>I first made a few sketches of what i wanted to cut.</p>
+
+<p><img src="/assets/images/2022-04-21-vinyl-cutter/vinyl25.jpg" alt="vinyl" /></p>
+
+<p>Next i drew the image in Illustrator. I exported the file as a SVG file and loaded the file in Mods.</p>
+
+<p><img src="/assets/images/2022-04-21-vinyl-cutter/vinyl26.jpg" alt="vinyl" /></p>
+
+<p><strong>1st problem:</strong></p>
+
+<p>Mods didn’t recognized the SVG file. Michelle told me this had something to do with files that are exported from Illustrator and Mods not working together.</p>
+
+<p>We opened the file in Inkscape to export from there. Mods still didn’t recognize the image.</p>
+
+<p>Searching through the Fabacademy page to find the solution on the page of someone who ran into the same problem, we discovered that Mods needed the width and height in the XML code of the SVG file, which illustrator doesn’t include.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    "Mods program needs specific metadata from your .svg file. When creating a .svg from Adobe Illustrator (2021), the metadata does not include 2 parameters that Mods needs to function correctly. Adding, for example, width="600px" height ="600px" to the XML metadata gives it the information that it needs to work."[1]
+</code></pre></div></div>
+
+<p>When opening the code of the SVG directly exported out of Illustrator, the code was not organized and difficult to read. When opening the image in Inkscape and then saving it, the code was readable and we could add the width and height to the code.</p>
+
+<p><img src="/assets/images/2022-04-21-vinyl-cutter/vinyl29.jpg" alt="vinyl" /></p>
+
+<p><img src="/assets/images/2022-04-21-vinyl-cutter/vinyl27.jpg" alt="vinyl" /></p>
+
+<p><strong>2nd problem:</strong></p>
+
+<p>After editing the code of the SVG, Mods still didn’t recognize the image. Another search on the Fabacademy page learned me that Mods also doesn’t like transparent backgrounds in the SVG.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    "Time to export the svg files. So I used Inkscape to generate one for the traces and one for the outline. Initially I had some trouble loading it up in mods. Then I realized the svg needs to have a white (not transparent) background to allow the design to be inversed." [2]
+</code></pre></div></div>
+
+<p>I added a white background to all of the SVG files, after this Mods was able to load the image.</p>
+
+<p>[1] <a href="https://fabacademy.org/2021/labs/waag/students/philip-hozier/assignments/week3/">Philip Hozier’s page where we found the solution to the first problem</a></p>
+
+<p>[2] <a href="http://fab.cba.mit.edu/classes/863.21/CBA/people/catfang/hw/week4.html">Cathy Fang’s page where we found the solution to the second problem</a></p>
+
+<h5 id="heat-pressing-the-image">Heat pressing the image</h5>
+
+<p>After solving the conflict with mods i was able to print the image. I printed the image in 3 different parts, all with a different color.</p>
+
+<p>!! Important !!</p>
+
+<p>When using thermo vinyl put the roll upside down in the vinyl cutter.</p>
+
+<p>Also, mirror the image before cutting.</p>
+
+<p>Farah profided me with the following instructions:</p>
+
+<ol>
+  <li>
+    <p>Turn on the heatpress.</p>
+  </li>
+  <li>
+    <p>Set the temperature to 311*F (the heatpress works with Fahrenheit instead of Celsius).</p>
+  </li>
+  <li>
+    <p>Put a sheet of baking parchment on the heatpress.</p>
+  </li>
+  <li>
+    <p>Put the t-shirt on top of the baking parchment.</p>
+  </li>
+  <li>
+    <p>Place the image on the t-shirt. Make sure the thermo vinyl around the image is peeled off so only the image and the plastic peel are left. Since i have 3 different parts i only place one of the parts on the t-shirt.</p>
+  </li>
+  <li>
+    <p>Put a sheet of baking parchment on the t-shirt (so the t-shirt has baking parchment on both sides).</p>
+  </li>
+  <li>
+    <p>Check if the heatpress is completely heated up to the right temperature.</p>
+  </li>
+  <li>
+    <p>Set timer on 20 seconds</p>
+  </li>
+  <li>
+    <p>Press play on the timer and immediately press down the handle of the heatpress</p>
+  </li>
+  <li>
+    <p>When the timer beeps, lift handle and remove the heatpress.</p>
+  </li>
+  <li>
+    <p>Remove the peel from the t-shirt.</p>
+  </li>
+  <li>
+    <p>Repeat process with next part of the image.</p>
+  </li>
+</ol>
+
+<h5 id="the-result">The result:</h5>
+
+<p><img src="/assets/images/2022-04-21-vinyl-cutter/vinyl28.jpg" alt="vinyl" /></p>
 :ET
