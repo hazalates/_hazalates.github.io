@@ -1,0 +1,168 @@
+I"<p>I made an assessment of what projects i want to do in my remaining time at Waag.</p>
+
+<p><img src="/assets/images/2022-05-06-projects/projects01.jpg" alt="projects" /></p>
+
+<p>I ordered them by priority, the upper post-its being projects with higher priority, and de lower post-its are not urgent.</p>
+
+<h4 id="main-project">Main project</h4>
+
+<p>For my main project i want to further develop my fermentation machine. I want to add features, and make it more than just a plastic box with a homemade incubator.</p>
+
+<p>What i want to do &amp; what do i need:</p>
+
+<p><strong>PCB</strong></p>
+
+<p>Learn how to make a PCB</p>
+
+<p>-&gt; Watch Fabacademy tutorials</p>
+
+<p>-&gt; Wait for Henk/Michele to start with making a programmer</p>
+
+<p>-&gt; Learn Kicad</p>
+
+<p>-&gt; Start with small project (LED for box)</p>
+
+<p><strong>Other heating element (&amp; PID fine tuning)</strong></p>
+
+<p>Look into other heating elements (start with IR -&gt; Ask Henk (Google was unsuccesful))</p>
+
+<p>Buy new element</p>
+
+<p>PID control/fine tuning</p>
+
+<p>Test</p>
+
+<p><strong>Time control &amp; alarm</strong></p>
+
+<p>Make list for needed components</p>
+
+<p>Write code</p>
+
+<p><strong>Humidity measurement &amp; control (aircirculation)</strong></p>
+
+<p>Other chip to measure (instead of BME280) -&gt; Ask Henk which one</p>
+
+<p>Ultrasonic humidifier + basetank</p>
+
+<p><strong>Housing/cast</strong></p>
+
+<p>Research different materials (Mycelium? Wood?)</p>
+
+<p>Sketch!</p>
+
+<p>Make CAD</p>
+
+<p>Prototype</p>
+
+<p><strong>Live PH measurement</strong></p>
+
+<p>Look into digital PH probes -&gt; how do they work, compatible with microcontroller?</p>
+
+<p>Order or build own</p>
+
+<p><strong>App to control machine and alarms</strong></p>
+
+<p>Dive into app design &amp; development</p>
+
+<p>Networking &amp; communication of MC to phone/computer? Or MIM (RaspberryPi?)</p>
+
+<p><strong>Separate box for liquids (airstone/pump)</strong></p>
+
+<p>What do i need for fermenting liquids? -&gt; research &amp; make list</p>
+
+<p>(Vacuum)</p>
+
+<p><strong>Measure bad bacteria</strong></p>
+
+<p>Prob not possible; how to set “sterile environment?” -&gt; Make alarm for when conditions are not met?</p>
+
+<h4 id="side-projects">Side projects</h4>
+
+<h5 id="making-full-use-of-fablab">Making full use of Fablab</h5>
+
+<p><strong>G-Code 3D printing &amp; 3D printing</strong></p>
+
+<p>Dive into G-code</p>
+
+<p>Ideas for 3D prints</p>
+
+<p><strong>CNC projects</strong></p>
+
+<p>Ideas/sketches</p>
+
+<p><strong>Lasercut projects</strong></p>
+
+<p>Ideas/sketches</p>
+
+<p><strong>Vinyl projects</strong></p>
+
+<p>Ideas/sketches</p>
+
+<p><strong>CRISPR/CAS9 - biolumnicent bacteria - Glow in the dark yeast!</strong></p>
+
+<p>Ask Cas for when we can do this experiment.</p>
+
+<p><strong>Mycelium materials</strong></p>
+
+<p>Research possible purposes</p>
+
+<p>Biolab: Make mother starter.</p>
+
+<p>Make mould for growing mycelium</p>
+
+<p><strong>Later</strong></p>
+
+<p>Slime-mold robot</p>
+
+<p>Kefirgrain plastic</p>
+
+<h5 id="easy-to-learn-but-not-top-priority">Easy to learn but not top priority</h5>
+
+<p><strong>Sewing</strong></p>
+
+<p>Ask Michelle to show sewing machine -&gt; DONE</p>
+
+<p>Pick up sewingmachine at dads place</p>
+
+<p>Practise with old clothes</p>
+
+<p>Look at pinterest for ideas for first projects (totebag?)</p>
+
+<p><strong>Kombucha leather experiments</strong></p>
+
+<p>Research how to make better material</p>
+
+<p>Grow SCOBY</p>
+
+<h5 id="could-be-done-another-time--low-priority">Could be done another time / low priority</h5>
+
+<p><strong>Molecular flavor pairing</strong></p>
+
+<p>Watch lectures on youtube</p>
+
+<p><strong>Hard kombucha</strong></p>
+
+<p>Make F1</p>
+
+<p>Order ale or champagne yeasts</p>
+
+<p><strong>Wood kombucha</strong></p>
+
+<p>Make F1</p>
+
+<p>Order woodchips</p>
+
+<p><strong>Kinect/image tracking</strong></p>
+
+<p>Buy Kinect</p>
+
+<p>Get Openkinect to work on computer</p>
+
+<p><strong>Ableton</strong></p>
+
+<p>Download/install</p>
+
+<p>Watch tutorials</p>
+
+<p>Ask Yara</p>
+:ET

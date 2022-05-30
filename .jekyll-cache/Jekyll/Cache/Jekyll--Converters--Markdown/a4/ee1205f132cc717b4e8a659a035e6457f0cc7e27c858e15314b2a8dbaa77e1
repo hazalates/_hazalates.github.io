@@ -1,0 +1,47 @@
+I"�<p>To be able to live measure PH i’ll try to hook up a PH probe to my arduino.</p>
+
+<h4 id="possible-obstacles">Possible obstacles</h4>
+
+<p>There are a few possible problems to be aware of:
+PH Probes need calibration. How often? Can it live measure during one round of fermentation and then calibration?</p>
+
+<p>Does the material of the probe influence the ferment (fermentation + reactive metals don’t go well together)</p>
+
+<h4 id="setting-up-the-ph-probe">Setting up the PH probe</h4>
+
+<h6 id="calibrating-the-analog-sensor">Calibrating the analog sensor</h6>
+
+<p>I started by following <a href="https://cdn.awsli.com.br/969/969921/arquivos/ph-sensor-ph-4502c.pdf">this</a> tutorial about setting up the PH probe.</p>
+
+<p>My pinout is as follow:</p>
+
+<p>V+ - Arduino 5V
+PO – Arduino A0
+Gnd – Arduino Gnd</p>
+
+<p>(Plaatje Arduino)</p>
+
+<p>I short-circuit the BNC connector to stimulate a neutral PH7.</p>
+
+<p>(plaatje BNC)</p>
+
+<p>Then i used the following code and screw the POT until i got a value of 2,50v (2,51/2,51 in my case)</p>
+
+<p>(plaatje code)</p>
+
+<p>Now the resistance/input signal is calibrated.</p>
+
+<p>######</p>
+
+<p>Next i hooked up the PH probe and let it sit in distilled water (PH7)</p>
+
+<p>(plaatje probe)</p>
+
+<p>I used the following code to read the measured PH value</p>
+
+<p>(plaatje code)</p>
+
+<p>After waiting for a couple of minutes to stabilize it gave me a reading of 8,75.</p>
+
+<p>I checked with the digital PH meter which gave me a reading of 7,02.</p>
+:ET

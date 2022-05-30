@@ -1,4 +1,4 @@
-I".=<h4 id="-safety-instructions-">!! Safety instructions !!</h4>
+I"�L<h4 id="-safety-instructions-">!! Safety instructions !!</h4>
 
 <p>Make sure you never bump into screws (fire).</p>
 
@@ -545,4 +545,109 @@ Save files separately. Set metric system. Save file in map.</p>
 <p>Look into shopbot settings because of non circulair circle.</p>
 
 <p>Look into offset - lower feed rate - gcode.</p>
+
+<h4 id="the-intern-box">The intern box</h4>
+
+<p>After learning how to work with the CNC, it was time to make something!</p>
+
+<p>First assignment: The Intern Box</p>
+
+<h5 id="prepping-in-fusion360">Prepping in Fusion360</h5>
+
+<p>I struggled a lot with Fusion 360. I wanted to make hamer tenons and make my box parametric.</p>
+
+<p>I drew the hamer tenon on one face of the box but i couldn’t get the tenon on the other face to align.</p>
+
+<p>I decided to go a little simpler and make normal finger tenons.</p>
+
+<p><img src="/assets/images/2022-04-22-cnc/cncb9.jpg" alt="cnc" /></p>
+
+<p>Then i projected the face on a sketch (By creating a new sketch on the upper component and then selecting the face as the sketchplane) and saved the sketches as a DXF file</p>
+
+<p><img src="/assets/images/2022-04-22-cnc/cncb11.jpg" alt="cnc" /></p>
+
+<p><img src="/assets/images/2022-04-22-cnc/cncb10.jpg" alt="cnc" /></p>
+
+<h5 id="setting-up-vcarve">Setting up VCarve</h5>
+
+<p>I found a nice piece of plywood opened up VCarve</p>
+
+<p>I measured the plywood and entered the measurements in VCarve. (1220<em>890</em>12mm)</p>
+
+<p>Then i imported the DXF files and fitted them on the board.</p>
+
+<p><img src="/assets/images/2022-04-22-cnc/cncb1.jpg" alt="cnc" /></p>
+
+<p>Because the pepper was too small i transported it to the top of the box and enlarged it.</p>
+
+<p>I still needed a smaller mill for the pepper so i decided to mill only the pepper with a 3mm mill.</p>
+
+<p>Then i made circles for the screw holes</p>
+
+<p>I set up 4 different toolpaths:</p>
+
+<p><img src="/assets/images/2022-04-22-cnc/cncb8.jpg" alt="cnc" /></p>
+
+<p>Settings for each toolpath:</p>
+
+<p>Screw hole toolpath:</p>
+
+<p><img src="/assets/images/2022-04-22-cnc/cncb2.jpg" alt="cnc" /></p>
+
+<p>Pocket toolpath (for the lid of the box):
+I gave this toolpath 1mm offset. It fitted perfect.</p>
+
+<p><img src="/assets/images/2022-04-22-cnc/cncb6.jpg" alt="cnc" /></p>
+
+<p>Profile toolpath (cutout of the main parts):
+I gave this toolpath .3mm offset. Could have used a bigger offset.
+I placed notches on all sides of the faces. Because i was going to mill the pepper separately i gave the top face extra nudges.</p>
+
+<p><img src="/assets/images/2022-04-22-cnc/cncb7.jpg" alt="cnc" /></p>
+
+<p>Profile toolpath (pepper):</p>
+
+<p>I also gave the pepper nudges.</p>
+
+<p><img src="/assets/images/2022-04-22-cnc/cncb5.jpg" alt="cnc" /></p>
+
+<p>All toolpaths (except the pepper) were done with this 5mm end mill setting:</p>
+
+<p><img src="/assets/images/2022-04-22-cnc/cncb3.jpg" alt="cnc" /></p>
+
+<p>The 3mm (pepper) mill settings:</p>
+
+<p><img src="/assets/images/2022-04-22-cnc/cncb4.jpg" alt="cnc" /></p>
+
+<h5 id="time-to-cnc">Time to CNC!</h5>
+
+<p>Michelle helped me set up the CNC, since i almost forgot to make a picture of the coordinates.</p>
+
+<p><img src="/assets/images/2022-04-22-cnc/cncb17.jpg" alt="cnc" /></p>
+
+<p>I first used the “schroeven kort” but they didn’t wanted to be screwed, and one broke, so we changed to the woodies instead. Those worked perfect.</p>
+
+<p>And then the moment was finally there:</p>
+
+<p><img src="/assets/images/2022-04-22-cnc/cncb13.jpg" alt="cnc" /></p>
+
+<p>I was a little scared while watching the machine. Stayed very closely to the spacebar.</p>
+
+<p><img src="/assets/images/2022-04-22-cnc/cncb18.jpg" alt="cnc" /></p>
+
+<h5 id="sanding-sanding-sanding">Sanding, sanding, sanding</h5>
+
+<p>Because of the plywood being a cheap and low quality material, the wood chipped quite a lot. The pepper was done with a smaller mill and slower feed rate, and came out nicely. I used a dremmel and sanding paper to smooth the chips</p>
+
+<p><img src="/assets/images/2022-04-22-cnc/cncb12.jpg" alt="cnc" /></p>
+
+<p><img src="/assets/images/2022-04-22-cnc/cncb14.jpg" alt="cnc" /></p>
+
+<h5 id="results">Results</h5>
+
+<p>And then the pepperbox was done!</p>
+
+<p><img src="/assets/images/2022-04-22-cnc/cncb15.jpg" alt="cnc" /></p>
+
+<p><img src="/assets/images/2022-04-22-cnc/cncb16.jpg" alt="cnc" /></p>
 :ET

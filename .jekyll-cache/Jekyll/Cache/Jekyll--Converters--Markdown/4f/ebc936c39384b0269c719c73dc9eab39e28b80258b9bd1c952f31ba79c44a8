@@ -1,0 +1,177 @@
+I"�<p>In the previous week i’ve learned to mill and stuff a PCB, and how to program a PCB. Next i’ll make my own Hello World board. For this i have to learn how to work with Kicad. I also have to figure out which components to use and which value the components need to have. I already have the Fab lib for Kicad installed.</p>
+
+<p>I’ll use this schematic supplied by Henk as a base and build on top of that:</p>
+
+<p><img src="/assets/images/2022-05-23-hello-world/hello01.png" alt="hello" /></p>
+
+<h5 id="componentsbom">Components/BOM</h5>
+
+<p>The schematic contains the following components:</p>
+
+<ul>
+  <li>ATtiny412</li>
+  <li>Button_B35N</li>
+  <li>LED</li>
+  <li>Capasitor (value unknown)</li>
+  <li>Phototransistor_PT15-21C-TR8</li>
+  <li>Resistor (value unknown)</li>
+  <li>Pinheader FTDI 1x06</li>
+  <li>Pinheader UPDI 1x03</li>
+</ul>
+
+<p>I noticed that there is no voltage regulator in the schematic, Ben told me this is because the ATtiny runs on 5v. (The SAMD’s run on 3.3v)</p>
+
+<h5 id="schematics">Schematics</h5>
+
+<p>I placed all the components in Kicad.</p>
+
+<p><img src="/assets/images/2022-05-23-hello-world/hello02.png" alt="hello" /></p>
+
+<p>Then the difficult part begun. I connected the pins i knew how to connect.</p>
+
+<p><img src="/assets/images/2022-05-23-hello-world/hello03.png" alt="hello" /></p>
+
+<p>For the rest of the connections went to <a href="https://fabacademy.org/2021/labs/waag/students/kooi-erwin/report/week_06/">Erwin’s site</a> and looked at his schematic:</p>
+
+<p><img src="/assets/images/2022-05-23-hello-world/hello04.png" alt="hello" /></p>
+
+<p>The following questions arose:</p>
+
+<ul>
+  <li>
+    <p>Why is there a resistor connected to 5v and pin 5 before the phototransistor?</p>
+  </li>
+  <li>
+    <p>How do i know which pins from the µC to connect to my components?</p>
+  </li>
+</ul>
+
+<h5 id="why-is-there-a-resistor">Why is there a resistor?</h5>
+
+<p>Since the photoresistor is operating like a switch we need to use a pull up or a pull down resistor.</p>
+
+<p>As a comment in <a href="https://forum.arduino.cc/t/why-do-i-need-a-pull-down-resistor-in-the-button-example/364688">this example</a> explains:</p>
+
+<p>“If there were no link between pin and 0V (GND here), the input would be floating when button is not pressed, because of the very high input impedance. The resistor gives this link needed to make sure the input is at 0V in this case. A wire would not allow the pin to be HIGH when button pressed, as it would make a short between 5V and 0V”</p>
+
+<h5 id="but-why-isnt-there-a-resistor-connected-to-5v-and-pin-7-before-the-switch">But why isn’t there a resistor connected to 5v and pin 7 before the switch??</h5>
+
+<p>But since we saw in the last answer that we need a pull up resistor before a button to prevent the input from floating, why isn’t there one before the switch on pin 7?</p>
+
+<p>Again Ben to the rescue.</p>
+
+<p>Ben told me that you can program the internal pull up resistor inside the µC instead of using a separate resistor. I knew arduino could do this.</p>
+
+<p><img src="/assets/images/2022-05-23-hello-world/hello07.jpg" alt="hello" /></p>
+
+<p>The µC (in this example for the arduino, but also the ATtiny i’m using) has a lot of peripherals we can’t see. We can use the internal resistor as a pull up resistor by initializing the pin where the button is connected (lets say pin2) as pinMode(2,INPUT_PULLUP);</p>
+
+<p>But why do we do this for the switch and not for the photoresistor?</p>
+
+<p>Our guess is that this is because the resistance of the internal resistor is not so high, and fixed. This is fine for the button, but with the photoresistor we might need a higher resistance, and we want to be able to change this value.</p>
+
+<h5 id="how-do-i-know-which-pins-to-connect">How do i know which pins to connect</h5>
+
+<p>Data sheeeet!!!</p>
+
+<p><img src="/assets/images/2022-05-23-hello-world/hello06.jpg" alt="hello" /></p>
+
+<p><img src="/assets/images/2022-05-23-hello-world/hello05.jpg" alt="hello" /></p>
+
+<p>But what does it all mean?</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>VCC</td>
+      <td>Power input (ATtiny412 can operate 5v)</td>
+    </tr>
+    <tr>
+      <td>GND</td>
+      <td>Power output</td>
+    </tr>
+    <tr>
+      <td>OUT (0 OUT, 1 OUT)</td>
+      <td>Logic output pin</td>
+    </tr>
+    <tr>
+      <td>IN (0 IN0, 0 IN1)</td>
+      <td>Logic input pin</td>
+    </tr>
+    <tr>
+      <td>MOSI</td>
+      <td>SPI; Master-out-slave-in</td>
+    </tr>
+    <tr>
+      <td>MISO</td>
+      <td>SPI; Master-in-slave-out</td>
+    </tr>
+    <tr>
+      <td>SCK</td>
+      <td>SPI; Serial Clock, the line that carries the clock signal.</td>
+    </tr>
+    <tr>
+      <td>DAC</td>
+      <td>Digital to Analog converter (DAC), used for converting digital pulses to analog signals</td>
+    </tr>
+    <tr>
+      <td>TXD</td>
+      <td>Serial; Transmit data (connect to RXD of other device)</td>
+    </tr>
+    <tr>
+      <td>RXD</td>
+      <td>Serial; Receive data (connect to TXD of other device)</td>
+    </tr>
+    <tr>
+      <td>SDA</td>
+      <td>I2C; The line for the master and slave to send and receive data.</td>
+    </tr>
+    <tr>
+      <td>SCL</td>
+      <td>I2C; Serial Clock, the line that carries the clock signal.</td>
+    </tr>
+    <tr>
+      <td>UPDI</td>
+      <td>Pin for UPDI, interface for external programming and on-chip debugging of µC’s</td>
+    </tr>
+    <tr>
+      <td>CLK I</td>
+      <td>Clock In</td>
+    </tr>
+    <tr>
+      <td>GPIO (PA1, PA2, etc)</td>
+      <td>General Purpose Input/Output. PA1 corresponds to Pin 2 when coding)</td>
+    </tr>
+    <tr>
+      <td>CCL</td>
+      <td>Configurable Custom Logic</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Other important things:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Spec</th>
+      <th>ATtiny412</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Flash memory</td>
+      <td>4096 bytes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="back-to-kicad">Back to Kicad</h5>
+
+:ET

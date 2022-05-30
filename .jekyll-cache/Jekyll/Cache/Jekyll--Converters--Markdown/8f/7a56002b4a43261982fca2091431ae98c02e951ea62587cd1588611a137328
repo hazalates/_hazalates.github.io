@@ -1,0 +1,154 @@
+I"�<h4 id="how-to-program-a-programmer">How to program a programmer</h4>
+
+<p>So first i have to say i’m diving into a rabbit-hole by wanting to figure out how to program a programmer myself.</p>
+
+<p>I found <a href="https://mtm.cba.mit.edu/2021/2021-10_microcontroller-primer/">this site from MTM</a> explaining a lot about µC’s AND how to program them by making a programmer.</p>
+
+<p>It also gave me a little clarity on some acronyms flying by in the past few days.</p>
+
+<p>JTAC (joint test action group) - protocol that is standard for many µC’s (ARM cores)</p>
+
+<p>SWD (serial wire debug) - 2-pin variant of JTAC. Most common on newer ARM chips</p>
+
+<p>CMSIS-DAP - programming device firmware. Runs on the programming device (the programmers we’re making). Communicates over USB to the PC and on the other side over TTL (simple physical pins) to the µC</p>
+
+<p>CMSIS-DAP device - programmer. Any device that can write programs into the µC’s memory using JTAC or SWD</p>
+
+<p><a href="https://learn.adafruit.com/bootloader-basics/">Bootloader</a> - a “programming program” that runs when powering a µC to check if there’s a new program to be loaded and loads it if needed (to load the code we wrote in its memory).</p>
+
+<p>To program a programmer we need <a href="http://academy.cba.mit.edu/classes/embedded_programming/SWD/free_dap_d11c_mini.bin">this binary file</a> and an other CMSIS-DAP device</p>
+
+<h4 id="getting-all-the-requirements">Getting all the requirements</h4>
+
+<p><strong>So we need a CMSIS-DAP tool - a programmed programmer.</strong></p>
+
+<p>The CMSIS-DAP tool should be connected to the PC by USB</p>
+
+<p>The CMSIS-DAP tool should be connected to the programmer i want to program by the SWD pinout. Orientation is important, but by using the wrong orientation i wont hurt my programmer.</p>
+
+<p>My programmer connected to a powersupply (by using another USB port)</p>
+
+<p><strong>And we need a CMSIS-DAP software</strong></p>
+
+<p>I’m going for EDBG - Bas told me this is a simpeler program. Although is known not to work well woth OSX, but there’s a way to bypass this.</p>
+
+<p>Installing EDBG (Mac M1):</p>
+
+<p>// I got the latest build from <a href="https://github.com/ataradov/edbg/actions">this repo</a></p>
+
+<ol>
+  <li>
+    <p>Download the EDBG code from <a href="https://github.com/ataradov/edbg/">this repo</a></p>
+  </li>
+  <li>
+    <p>Install hidapi - i already have brew installed so i installed hidapi by opening the terminal and run: brew install hidapi</p>
+  </li>
+</ol>
+
+<p>Then i saw that i missed a step. I didn’t use Rosetta to open terminal before installing hidapi.</p>
+
+<p>So i went a step back and ran brew uninstall hidapi.</p>
+
+<p>I closed terminal and looked up the terminal app in my Finder window and then pressed right click - Get Info - Open using Rosetta.</p>
+
+<p>FYI: Rosetta is an program to force an app to use the Intel based environment of a program instead of the M1 chip environment.</p>
+
+<p>(screenshot rosetta)</p>
+
+<p>I opened the terminal again and ran brew install hidapi.</p>
+
+<p>Then i saw that Homebrew needed to be installed in /usr/local/, while my homebrew is installed in /opt/homebrew/. I decided to ignore this, and come back to this point if i run into errors.</p>
+
+<ol>
+  <li>
+    <p>Open make file and change libhidapi.a to libhidapi.dylib : The makefile didn’t have libhidapi.a, so i did not change the makefile</p>
+  </li>
+  <li>
+    <p>Run Make all : I navigated to the repo and ran make all in the terminal, resulting in the following error</p>
+
+    <p>make: pkg-config: Command not found
+ make: pkg-config: Command not found
+ gcc  -W -Wall -Wextra -O3 -std=gnu11 dap.c edbg.c target.c target_atmel_cm0p.c target_atmel_cm3.c target_atmel_cm4.c target_atmel_cm7.c target_atmel_cm4v2.c target_mchp_cm23.c target_st_stm32g0.c target_gd_gd32f4xx.c target_nu_m480.c target_lattice_lcmxo2.c  dbg_mac.c -framework IOKit -framework Foundation -framework CoreFoundation -framework Cocoa  -o edbg
+ dbg_mac.c:36:10: fatal error: ‘hidapi.h’ file not found
+ #include “hidapi.h”
+      ^~~~~~~~~~
+ 1 error generated.
+ make: *** [edbg] Error 1</p>
+  </li>
+</ol>
+
+<p>I checked if hidapi was really installed with “brew list” and noticed hidapi was not there. I ran “brew install hidapi” again and saw the following error:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    Error: Cannot install under Rosetta 2 in ARM default prefix (/opt/homebrew)!
+To rerun under ARM use:
+    arch -arm64 brew install ...
+To install under x86_64, install Homebrew into /usr/local.
+</code></pre></div></div>
+
+<p>Lets take another step back.</p>
+
+<p>Installing homebrew for Intel apps:</p>
+
+<p>Before i can install hidapi i need to install homebrew for intel apps, meaning installing homebrew in /usr/local instead of /opt/homebrew/</p>
+
+<p>To do:</p>
+
+<p>Install .tar homebrew in /usr/local
+Set terminal to use rosetta to behave as an Intel chip program
+Install hidapi
+Edit make file and run make
+Install EDBG</p>
+
+<p>Then Henk told me i don’t need to use EDBG. I can use the arduino IDE instead.</p>
+
+<h4 id="programming-samd11-circuits-with-arduino-ide">Programming SAMD11 circuits with Arduino IDE</h4>
+
+<p><strong>Circuit requirements</strong></p>
+
+<p>To make circuits that are programmable with the Arduino IDE the circuits needs a few basics (as copied from the <a href="https://mtm.cba.mit.edu/2021/2021-10_microcontroller-primer/fab-arduino/#1-schematic-requirements">MTM site</a>):</p>
+
+<ol>
+  <li>
+    <p>Power and communication to the board (i.e. a USB hookup)</p>
+  </li>
+  <li>
+    <p>Voltage regulation (USB gives 5v/500ma, our µC needs +3v3 - we need a regulator to convert the voltage)</p>
+  </li>
+  <li>
+    <p>Bypass capacitors (these help stabilize voltage inputs to the µC)</p>
+  </li>
+  <li>
+    <p>a debug / programming port (we need this in order to load the bootloader)</p>
+  </li>
+</ol>
+
+<p><strong>Installing the bootloader</strong></p>
+
+<p>To use the Arduino bootloader on our SAMD11 we first need to program that bootloader into the µC using a programmer.</p>
+
+<p>For this (this is specifically for ATSAMD11 &amp; ATSAMD21 series) we use a CMSIS-DAP tool and edbg/pyOCD or OpenOCD to load the bootloader binary onto the board. The binary is specific to the µC we’re using.</p>
+
+<p><a href="https://github.com/qbolsee/ArduinoCore-fab-sam/blob/master/bootloaders/zero/binaries/sam_ba_SAMD11C14A.bin">this</a> is the binary for the ATSAMD11C.</p>
+
+<p><strong>Arduino setup</strong></p>
+
+<p>To make our boards compatible with the Arduino IDE we need to follow the next steps in the Arduino IDE.</p>
+
+<ol>
+  <li>
+    <p>Go to file -&gt; preferences -&gt; additional board manager URLS</p>
+  </li>
+  <li>
+    <p>add this link: https://raw.githubusercontent.com/qbolsee/ArduinoCore-fab-sam/master/json/package_Fab_SAM_index.json
+now arduino will be able to find the “board definitions” when we do:</p>
+  </li>
+  <li>
+    <p>tools -&gt; board -&gt; board manager
+search for Fab SAM core for Arduino
+hit install</p>
+  </li>
+</ol>
+
+<p>Now we can use the Arduino IDE to write code for our fab boards.</p>
+
+:ET

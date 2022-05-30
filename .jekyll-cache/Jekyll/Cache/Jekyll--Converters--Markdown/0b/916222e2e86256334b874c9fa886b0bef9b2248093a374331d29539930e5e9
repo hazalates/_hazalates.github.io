@@ -1,0 +1,325 @@
+I"�)<h4 id="how-to-use-the-modella-pcb-milling-machine">How to use the Modella PCB milling machine</h4>
+
+<p><img src="/assets/images/2022-05-13-pcb-milling/pcb2.jpg" alt="pcb" /></p>
+
+<p>This is the Modella PCB milling machine.</p>
+
+<p>The surface of the Modella consists of 4 layers</p>
+
+<p>1 - Plastic see trough plate</p>
+
+<p>2 - Acrylic plate</p>
+
+<p>3 - Sacrificial layer</p>
+
+<p>4 - Copper plate</p>
+
+<h6 id="copper-plate">Copper plate</h6>
+
+<p>The copper plate is the layer from which the PCB will be made.</p>
+
+<p>We mostly use one-sided copper plates, but we also have two-sided copper plates. (for double sided PCB’s).</p>
+
+<p>We don’t use the green glass plates, since they will make a lot of mess and destroys the milling bit easily.</p>
+
+<p>Always check the thickness of the copper plate with a caliper. This should be around 1.4-1.6mm.</p>
+
+<h6 id="milling-bits">Milling bits</h6>
+
+<p>We have a few different milling bits</p>
+
+<p>Thickness:</p>
+
+<p>0.4mm - used for traces</p>
+
+<p>0.8mm - used for outlines</p>
+
+<p>Flutes:</p>
+
+<p>1 flute - standard</p>
+
+<p>2 flute - used for very precise milling</p>
+
+<h6 id="programmers">Programmers</h6>
+
+<p>Before you can program your self-made PCB, you’ll need a programmer, also called ISP (in-system programmer).</p>
+
+<p>A programmer is a PCB specifically for programming µC’s (micro-controllers).</p>
+
+<p>There are different programmers for different µC’s.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Programmer</th>
+      <th>Micro-controller</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>JTAG</td>
+      <td>older SAMD</td>
+    </tr>
+    <tr>
+      <td>SWD</td>
+      <td>newer SAMD</td>
+    </tr>
+    <tr>
+      <td>UPDI</td>
+      <td>ATtiny</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="how-to-mill-a-pcb">How to mill a PCB</h4>
+
+<h5 id="setting-up-the-modella">Setting up the Modella</h5>
+
+<ol>
+  <li>
+    <p>Clean the sacrificial layer with sticker remover.</p>
+  </li>
+  <li>
+    <p>Pick a copper plate. Measure how big your PCB will be and if it will fit on the plate.</p>
+  </li>
+  <li>
+    <p>Put double-sided tape on the bottom of the new copper plate. Make sure the whole surface is covered, but the tape can not overlap. This will create a level difference resulting in uneven milled traces.</p>
+  </li>
+  <li>
+    <p>Use a piece of fabric to press the copper plate to the sacrificial layer (no dirty fingerprints on the plate). Press tightly but don’t overdo it.</p>
+  </li>
+  <li>
+    <p>Move the mill head up with the up button on the Modella before changing the milling bit.</p>
+  </li>
+  <li>
+    <p>To remove the milling bit, hold your finger underneath to prevent falling and breaking.</p>
+  </li>
+  <li>
+    <p>Screw on the right side of the red sticker to release mill.</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/2022-05-13-pcb-milling/pcb3.jpeg" alt="pcb" /></p>
+
+<p><img src="/assets/images/2022-05-13-pcb-milling/pcb1.jpeg" alt="pcb" /></p>
+
+<ol>
+  <li>
+    <p>Push the new mill in almost all the way. Tighten the screw snugly but not violently.</p>
+  </li>
+  <li>
+    <p>Move the mill head all the way down and then slightly up.</p>
+  </li>
+</ol>
+
+<p>We set the x- and y-origin using Mods. Before we can communicate between the Modella and Mods, we first have to set up communication.</p>
+
+<h5 id="mods">Mods</h5>
+
+<h6 id="setting-up-communication">Setting up communication</h6>
+
+<ol>
+  <li>
+    <p>Open Mods by opening the terminal and type Mods. When a pop-up asks for authorization (2x) - just click cancel. A browser with Mods will open.</p>
+  </li>
+  <li>
+    <p>Open the right program by right click - Program - Open Program - MDX Mill - PCB.</p>
+  </li>
+  <li>
+    <p>Make sure the Modella is turned on. The machine will move to its “Home”.</p>
+  </li>
+  <li>
+    <p>Close all sockets &amp; ports (Websocket serial and pyserial)</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/2022-05-13-pcb-milling/pcb4.jpeg" alt="pcb" /></p>
+
+<ol>
+  <li>Open the serial socket &amp; port.</li>
+</ol>
+
+<h6 id="setting-the-origin">Setting the origin</h6>
+
+<ol>
+  <li>Don’t use manual move to move the mill on the x and y-axis, because it will move back to origin when it starts. Only move by coordinates in Mods.</li>
+</ol>
+
+<p><img src="/assets/images/2022-05-13-pcb-milling/pcb5.jpeg" alt="pcb" /></p>
+
+<ol>
+  <li>Z leveling (do this AFTER setting the x- and y-axis): Level the mill on the surface (careful, don’t drop it, use your finger). Open the screw and let the mill rest on the copper plate. Secure the screw.</li>
+</ol>
+
+<p>If you move the origin, you also have to redo the Z axis alignment. This is because the bed is not perfectly level on every spot.</p>
+
+<ol>
+  <li>Make photo of origin - in case there is a power blackout or sorts.</li>
+</ol>
+
+<h5 id="setting-up-the-file">Setting up the file</h5>
+
+<h6 id="milling-the-traces">Milling the traces</h6>
+
+<ol>
+  <li>You’ll need a SVG or PNG file. Select your SVG or PNG file. Start with the file for the traces.</li>
+</ol>
+
+<p><img src="/assets/images/2022-05-13-pcb-milling/pcb6.jpeg" alt="pcb" /></p>
+
+<ol>
+  <li>
+    <p>For PNG’s - set the DPI to 1000 - check the size of the image.</p>
+  </li>
+  <li>
+    <p>Set pcb defaults - there are two screens to do this. Use the right one for metric system.</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/2022-05-13-pcb-milling/pcb7.jpeg" alt="pcb" /></p>
+
+<ol>
+  <li>
+    <p>Click mill traces.</p>
+  </li>
+  <li>
+    <p>Go to the window “mill raster 2D”</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/2022-05-13-pcb-milling/pcb8.jpeg" alt="pcb" /></p>
+
+<ol>
+  <li>
+    <p>Set tool diameter to 0.4 mm (left side).</p>
+  </li>
+  <li>
+    <p>Set cut depth an max depth to 0.002 inch (!! right side, around 0.0508mm)</p>
+  </li>
+  <li>
+    <p>Set offsetnumber (amount of lines per trace) to 4.</p>
+  </li>
+  <li>
+    <p>Set Offset stepover to 0.5 (how much the lines overlap).</p>
+  </li>
+  <li>
+    <p>Press calculate. Black is going to be milled away. White are traces.</p>
+  </li>
+  <li>
+    <p>View your file - does it look like expected? - when it looks funky: troubleshoot. Make sure you have some black around the traces.</p>
+  </li>
+  <li>
+    <p>Go to job settings (window where we also set the origin).</p>
+  </li>
+  <li>
+    <p>Set the cut speed on 4mm/s for 0.4 mm 1 flute (check for 2 flute, prob slower).</p>
+  </li>
+  <li>
+    <p>When you are ready - send file (Websocket serial window). The milling will start right away.</p>
+  </li>
+  <li>
+    <p>Vacuum the plate when the milling is done.</p>
+  </li>
+</ol>
+
+<h6 id="milling-the-outline">Milling the outline</h6>
+
+<ol>
+  <li>
+    <p>Replace the milling bit, we want to use the 0.8mm mill now.</p>
+  </li>
+  <li>
+    <p>Move the mill to the origin and level the z-axis.</p>
+  </li>
+  <li>
+    <p>Select your SVG or PNG file for the outline.</p>
+  </li>
+  <li>
+    <p>For PNG’s - set the DPI to 1000 - check the size of the image.</p>
+  </li>
+  <li>
+    <p>Set pcb defaults - Use the right one for metric system.</p>
+  </li>
+  <li>
+    <p>Click mill outline.</p>
+  </li>
+  <li>
+    <p>Go to the window “mill raster 2D”</p>
+  </li>
+  <li>
+    <p>Set tool diameter to 0.8 mm (left side).</p>
+  </li>
+  <li>
+    <p>Set cut depth to 0.6mm and max depth to the thickness of the copper plate (1.55mm for example)</p>
+  </li>
+  <li>
+    <p>Leave offsetnumber (amount of lines per trace) on 4.</p>
+  </li>
+  <li>
+    <p>Leave Offset stepover on 0.5.</p>
+  </li>
+  <li>
+    <p>Press calculate.</p>
+  </li>
+  <li>
+    <p>View your file - does it look like expected? - when it looks funky: troubleshoot. Make sure you have some black around the outline.</p>
+  </li>
+  <li>
+    <p>Go to job settings.</p>
+  </li>
+  <li>
+    <p>Leave the cut speed on 4mm/s.</p>
+  </li>
+  <li>
+    <p>When you are ready - send file (Websocket serial window). The milling will start right away.</p>
+  </li>
+  <li>
+    <p>Vacuum the plate when the milling is done.</p>
+  </li>
+</ol>
+
+<h5 id="notes">Notes</h5>
+
+<ol>
+  <li>
+    <p>When you want to send a new file after interrupting the last session, first delete memory/reset machine by pressing up &amp; down simultaneously for 10 sec.</p>
+  </li>
+  <li>
+    <p>If you want to pause the milling and see how its going, you can press “view” on the Modella. When you want to continue, press “view” again.</p>
+  </li>
+</ol>
+
+<h5 id="issues">Issues</h5>
+
+<ol>
+  <li>
+    <p>The milling doesn’t go all the way trough. - The plate is not level. Level the z-axis again or set the cut depth a little higher</p>
+  </li>
+  <li>
+    <p>The paths of the image are not closed after calculating. - Change the threshold. In my case 0.9 was not enough, but 0.95 did the trick.</p>
+  </li>
+</ol>
+
+<h5 id="how-to-make-my-own-programmer">How to make my own programmer</h5>
+
+<p>Michelle showed us how to make the SWD programmer, and i tried to solder all the components. I had a hard time soldering, since i’ve never soldered so small. During soldering i damaged the trace where the pin header was connected. I got very frustrated and decided to make my own board the next day.</p>
+
+<h5 id="making-the-ftdi-programmer">Making the FTDI programmer</h5>
+
+<p>Henk sended me <a href="https://gitlab.fabcloud.org/pub/programmers/programmer-serial-d11c">this</a> link to make the FTDI programmer. The milling went smooth. But then it was time to solder…</p>
+
+<p>Jonathan showed me some techniques on how he solders and i watched <a href="https://vimeo.com/678487187">the fabacademy electronics production class</a> where Neil also shows some tips &amp; tricks on soldering. With this knowledge i went in again.. And made a nicely soldered board!!</p>
+
+<p>(picture of FTDI)</p>
+
+<p>Henk tried to program the board, and although this was possible, we ran into an error. We tried to find the problem, but couldn’t. I tested all the connections with a voltage meter and eventually discovered that one if the pins of the µC didn’t connect. I applied more solder but this didn’t help. The trace ran underneath the µC, so i had to de-solder the µC. I used a hot-air-gun for this. Underneath the µC the trace was a micro bit damaged. I fixed this with a little solder, and re-soldered the µC. All the connections worked fine after this and the PCB was programmable without errors.</p>
+
+<p>Next i made the bridge to program other boards with my programmer.</p>
+
+<p>(picture Bridge)</p>
+
+<p>And then only the broken SWD was left. I didn’t want to give up on it, so i used a tiny red wire to fix the traces. Also the pinheader got loose in my bag and ripped some of the traces of the board. This i fixed with hot glue. I tested all the connections, next i want to be able to program the SWD myself</p>
+
+<p>(picture SWD)</p>
+
+:ET
